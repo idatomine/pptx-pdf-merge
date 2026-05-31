@@ -1,6 +1,6 @@
 # PPTX to Merged PDF Converter (Flask + LibreOffice)
 
-Er du også lei av at det alltid skal koste penger å merge sammen hundrevis av powerpointer når du tar skippertak tre dager før eksamen? Prøv denne knalljbra løsningen som er et resultat av at jeg prokrastinerer tre dager før eksamen. 
+Er du også lei av at det alltid skal koste penger å merge sammen hundrevis av powerpointer når du tar skippertak tre dager før eksamen? Prøv denne knalljbra løsningen som er et resultat av at jeg prokrastinerer tre dager før eksamen. Få en ferdig-merget powerpoint som kan lastes rett opp til chat. 
   
 Laget med **Flask**, **LibreOffice (soffice)**, **PyPDF2** og kjærlighet 🥰
 
