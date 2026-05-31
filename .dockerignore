@@ -1,0 +1,5 @@
+presentations/
+_pdf_temp/
+*.pdf
+__pycache__/
+.venv/

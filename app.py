@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import subprocess
 from pathlib import Path
 from io import BytesIO
@@ -6,7 +7,7 @@ import tempfile
 from PyPDF2 import PdfMerger
 from flask import Flask, request, send_file, render_template_string
 
-SOFFICE_CMD = "/Applications/LibreOffice.app/Contents/MacOS/soffice"
+SOFFICE_CMD = os.environ.get("SOFFICE_CMD", "soffice")
 
 app = Flask(__name__)
 
@@ -546,4 +547,5 @@ def index():
         return send_file(merged_path, as_attachment=True, download_name="merged.pdf")
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    port = int(os.environ.get("PORT", 5001))
+    app.run(host="0.0.0.0", port=port)
